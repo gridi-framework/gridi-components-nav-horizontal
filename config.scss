@@ -1,0 +1,20 @@
+//Margins
+$gridi-components-navigation-horizontal-margin-top: $elements-margin-top !default;
+$gridi-components-navigation-horizontal-margin-bottom: $elements-margin-bottom !default;
+$gridi-components-navigation-horizontal-margin-left: $elements-margin-left !default;
+$gridi-components-navigation-horizontal-margin-right: $elements-margin-right !default;
+//Defined margins for each screens.
+$gridi-components-navigation-horizontal-margin-for-screens: () !default;
+/*$gridi-components-navigation-horizontal-margin-for-screens: (
+    s1: (
+        top: 20px, //Not required. Define only the margins values you want to change. Example - s2: ( top: 20px ) - change only top margin for screens greater than s2
+        bottom: 20px,
+        left: 20px,
+        right: 20px,
+    ),
+    ...
+) !default;*/
+//Navigation Item
+$gridi-components-navigation-horizontal-space-between-items: 0 !default;
+//Navigation Item Link
+$gridi-components-navigation-horizontal-item-link-padding: 0.65em 1em !default;

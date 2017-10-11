@@ -4,13 +4,10 @@
     @include include-element-margin($gridi-components-navigation-horizontal-margin-top, $gridi-components-navigation-horizontal-margin-bottom, $gridi-components-navigation-horizontal-margin-left, $gridi-components-navigation-horizontal-margin-right, $gridi-components-navigation-horizontal-margin-for-screens);
     
     @include navigation-sub-nav-style() {
-        display: inline-table;
         @include display-inline-flex();
-        vertical-align: top;
     }
 
     @include navigation-item-style() {
-        display: table-cell;
         margin: 0;
         padding: 0 0 0 $gridi-components-navigation-horizontal-space-between-items;
     }
@@ -27,5 +24,19 @@
         display: inline-block;
         padding: $gridi-components-navigation-horizontal-item-link-padding;
         vertical-align: top;
+    }
+}
+
+@include old-browsers-style($gridi-components-navigation-horizontal-support-old-browsers) {
+    .navs-horizontal #{$gridi-components-navigation-selector},
+    #{$gridi-components-navigation-selector}.nav-horizontal {
+        @include navigation-sub-nav-style() {
+            display: inline-table;
+            vertical-align: top;
+        }
+
+        @include navigation-item-style() {
+            display: table-cell;
+        }
     }
 }
